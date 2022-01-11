@@ -4,4 +4,4 @@ SimpleITK==2.1.1
 tensorflow
 matplotlib
 keras
-pickle
+
