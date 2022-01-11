@@ -21,7 +21,7 @@ def model_out(input_img, input_msk, age):
 
     # Loading Final Survival_Prediction Model and predicting survival_days given age of patient
     survival_model_files = open(survival_model_file, 'rb')
-    age_normalizer, survival_normalizer = pickle.load(survival_model_file)
+    age_normalizer, survival_normalizer = pickle.load(survival_model_files)
     input_img_ = Input((128,128,128,3))
     age_m = Input((1))
 
